@@ -1,38 +1,37 @@
-// CURD Operation on object
-
-// C-> create a object 
-const userObj = {
+const Account = {
     userName: "Foysal",
     age: 23,
-    amount: 23000,
-    pin: 123123
-};
+    balance: 1000000,
+    address: {
+        city: "Kushtia",
+        country: "Dhaka"
+    }
 
-
-
-// U-> update
-// userObj.pin = 12120;
-// console.log(userObj.pin);
-
-// console.log(userObj.userName);
-// console.log(userObj.age);
-
-// D-> Delete
-// delete userObj.pin;
-// console.log(userObj);
-
-// alternative method for access 
-// console.log(userObj["amount"]);
-
-// for..in loop
-// for (let key in userObj) {
-//     console.log(`Keys: ` + key, `Values: ` + userObj[key]);
-// }
-userObj["pin"] = 10000;
-// for..of loop // recommended
-for (let [key, value] of Object.entries(userObj)) {
-    console.log(key + `: ` + value);
 }
+
+// delete Account.age;
+
+// Account.city = "Dhaka";
+
+// console.log(Account);
+
+// for (let obj in Account) {
+//     console.log(obj + `: ` + Account[obj]);
+// }
+
+// for (let [key, value] of Object.entries(Account)) {
+//     console.log(key + ': ' + value);
+// }
+
+// const Account2 = { ...Account }
+// Account2.address.city = "Dhaka";
+// console.log(Account);
+
+
+// const Account2 = structuredClone(Account);
+// Account2.address.city = "Dhaka";
+// console.log(Account2);
+
 
 
 
