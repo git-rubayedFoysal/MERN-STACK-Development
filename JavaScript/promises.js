@@ -85,3 +85,15 @@ placeOrder(orderDetail)
   .then((orderDetail) => delivery(orderDetail))
   .catch((error) => console.log(error))
   .finally(() => console.log(orderDetail));
+
+// JSON
+const Person = ` {
+  "name": "Foysal",
+  "age": 23,
+  "city": "Kushtia",
+  "division": "Khulna"
+}`;
+
+// const myJson = JSON.stringify(Person);
+const obj = JSON.parse(Person);
+console.log(obj);

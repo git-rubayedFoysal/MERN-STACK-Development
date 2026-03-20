@@ -71,7 +71,7 @@ function delivery() {
   });
 }
 
-async function order() {
+(async function order() {
   try {
     const res1 = await placeOrder(orderDetail);
     const res2 = await prepareOrder(res1);
@@ -82,6 +82,4 @@ async function order() {
   } catch (error) {
     console.log(error);
   }
-}
-
-order();
+})();
