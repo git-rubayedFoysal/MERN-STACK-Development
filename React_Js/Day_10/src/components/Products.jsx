@@ -3,6 +3,7 @@ import { CreateCart } from "../context/CreateCart";
 
 function Products({ item }) {
   const [addCart, setCart] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const { cartCount, setCartCount } = useContext(CreateCart);
 
   return (

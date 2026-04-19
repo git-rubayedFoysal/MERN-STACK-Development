@@ -2,6 +2,7 @@ import { useState } from "react";
 import Products from "./Products";
 
 function Body() {
+  // eslint-disable-next-line no-unused-vars
   const [items, setItems] = useState([
     { id: 1, name: "Air Pod", price: 300 },
     { id: 2, name: "Keyboard", price: 500 },
