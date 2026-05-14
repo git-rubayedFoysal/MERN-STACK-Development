@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  overflow-y: hidden;
+}
+
+#root {
+  width: 100vw;
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+button {
+  transition: all 0.4s;
+}
+button:active {
+  background-color: rgb(39, 109, 179);
+  transform: scale(0.9);
+}
